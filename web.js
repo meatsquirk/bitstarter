@@ -7,7 +7,7 @@ var buffer = new Buffer(256);
 buffer = fs.readFileSync(indexFile);
 
 app.get('/', function(request, response) {
-  response.send(buf.toString());
+  response.send(buffer.toString());
 });
 
 var port = process.env.PORT || 5000;
